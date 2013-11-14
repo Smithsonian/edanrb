@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# (c) 2013 Smithsonian Institution.
+# Use subject to license terms.
 
 require "net/http"
 

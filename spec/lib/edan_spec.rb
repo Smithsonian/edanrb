@@ -1,3 +1,6 @@
+# (c) 2013 Smithsonian Institution.
+# Use subject to license terms.
+
 require File.join(File.dirname(__FILE__), '..', '..', 'lib', 'edan.rb')
 require 'json'
 
