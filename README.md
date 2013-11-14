@@ -16,7 +16,7 @@ export EDANUSER=SECRETNAME
 export EDANPASS=SECRETPASS
 
 irb
-> require 'edanrb'
+> require 'edan'
 > eq = EDANQuery.new('myapp')
 > res = eq.request('q=art&wt=json')
 > res.code
