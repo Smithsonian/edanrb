@@ -15,6 +15,7 @@ gem install edanrb
 export EDANUSER=SECRETNAME
 export EDANPASS=SECRETPASS
 
+gem install json
 irb
 > require 'edan'
 > eq = EDANQuery.new('myapp')
