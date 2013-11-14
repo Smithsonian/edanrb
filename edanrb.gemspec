@@ -7,7 +7,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Sarah Allen", "Andrew Gunther"]
   s.email       = 'allensa@si.edu'
   s.files       = ["lib/edan.rb"]
-  s.homepage    =
-    'http://collections.si.edu'
-  s.license       = 'custom'
+  s.homepage    = 'https://github.com/Smithsonian/edanrb'
+  s.license     = 'https://github.com/Smithsonian/edanrb/blob/master/license.md'
 end
