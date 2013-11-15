@@ -11,17 +11,20 @@ class EDANQuery
     puts "please provide a value for #{var_name}" if var.nil? || var.empty?
   end
 
-  def initialize(app_id, options = {})
+  def initialize(app_id,
+                    username = ENV['EDANUSER'],
+                    password = ENV['EDANPASS'],
+                    options = {})
     warn_if_empty(app_id, "app_id")
 
     @server = options[:server] || 'http://edan-api.si.edu'
     @app_id = app_id
 
-    @username = ENV['EDANUSER']
-    warn_if_empty(@username, "ENV['EDANUSER']")
+    @username = username
+    warn_if_empty(@username, "username or set ENV['EDANUSER']")
 
-    @password = ENV['EDANPASS']
-    warn_if_empty(@password, "ENV['EDANPASS']")
+    @password = password
+    warn_if_empty(@password, "password or set ENV['EDANPASS']")
   end
 
   def request(params="start=0", service="/metadataService")

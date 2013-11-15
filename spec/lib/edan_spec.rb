@@ -30,4 +30,25 @@ describe EDANQuery do
       end
     end
   end
+  describe "specify username, password, and server" do
+    let (:equery) { EDANQuery.new('example2', 'user', 'pass',
+                                  { :server => 'http://myserver.com'}) }
+    it "sets username" do
+      equery.username = 'user'
+    end
+
+    it "sets password" do
+      equery.password = 'pass'
+    end
+    it "sets server" do
+      equery.server = 'http://myserver.com'
+    end
+  end
+  describe "specify just server" do
+    let (:equery) { EDANQuery.new('example3',
+                              { :server => 'http://myserver.com'}) }
+    it "sets server" do
+      equery.server = 'http://myserver.com'
+    end
+  end
 end
